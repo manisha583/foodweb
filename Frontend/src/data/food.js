@@ -1,0 +1,68 @@
+const dishes = [
+    {
+      id: 1,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "maksjjxunni jsinxiwji jwims2jni jswnwexudwjhww dnijdi23jduejdurfkm",
+    },
+    {
+      id: 2,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+    {
+      id: 3,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+    {
+      id: 4,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+    {
+      id: 5,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+    {
+      id: 6,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+    {
+      id: 7,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+    {
+      id: 8,
+      name: "Chicken Roll",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "$12",
+      image: "/foods/chickenroll.jpg",
+      desc: "",
+    },
+  ];
+
+  export default dishes
