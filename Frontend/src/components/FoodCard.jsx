@@ -23,7 +23,7 @@ function FoodCard() {
   };
 
   return (
-    <section id="menu">
+    <section>
       <div className="mt-10 ">
         <h1 className="font-semibold text-gray-800 text-3xl px-1">
           Popular Dishes
@@ -37,7 +37,7 @@ function FoodCard() {
                 key={dish.id}
                 className="  bg-white rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="relative h-[180px] md:h-[250px]">
+                <div className="relative h-[180px] md:h-[200px]">
                   <img
                     src={dish.image}
                     alt={dish.name}
@@ -71,14 +71,14 @@ function FoodCard() {
                     </div>
                   )}
                 </div>
-                <div className="p-1">
+                <div className="p-2">
                   <div className="flex items-center justify-between">
                     <h3 className="font-semibold text-gray-900">{dish.name}</h3>
                   </div>
-                  <p className="text-sm text-gray-500 mt-1 line-clamp-1">
+                  <p className="text-sm text-gray-500 mt-0 line-clamp-1">
                     {dish.desc}
                   </p>
-                  <p className="text-orange-500 font-semibold mt-1 ">
+                  <p className="text-orange-500 font-semibold mt-0.5 ">
                     {dish.price}
                   </p>
                 </div>

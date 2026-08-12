@@ -2,7 +2,7 @@ function About() {
   return (
     <div className=" my-9 mx-1 bg-img bg-[url(/foods/img2.jpg)] h-[390px] bg-cover bg-center bg-no-repeat text-white rounded-4xl lg:h-[300px]">
       <div className=" flex flex-col justify-center items-center bg-black/60 w-full h-full rounded-4xl">
-        <h1 className="text-3xl">About Us</h1>
+        <h1 className="text-3xl ">About Us</h1>
         <div className="px-1  font-extralight lg:max-w-3xl">
           <p className="text-center py-2 leading-[22px]">
             <span className="font-medium">FOODIE</span> is the definitive way to
@@ -14,8 +14,7 @@ function About() {
             moment deserves to be spent with intention. That's why we've crafted
             a seamless delivery experience built on precision, care, and an
             unwavering commitment to quality — so every meal arrives exactly as
-            it should. Because true convenience isn't just about speed; it's
-            about giving you the freedom to savour more of what matters most.
+            it should.
           </p>
         </div>
         <div className="my-3">

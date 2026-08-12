@@ -7,7 +7,7 @@ import pureVeg from "../assets/menu/pureveg.jpg";
 import pasta from "../assets/menu/pasta.jpg";
 import dumpling from "../assets/menu/dumplings.jpg";
 
-function Menu() {
+function Menu({ category, setCategory }) {
   const menuList = [
     { id: 1, name: "Pizza", image: pizza },
     { id: 2, name: "Sushi", image: sushi },
@@ -19,7 +19,7 @@ function Menu() {
     { id: 8, name: "Dumpling", image: dumpling },
   ];
   return (
-    <section className="px-1">
+    <section id="menu" className="px-1">
       <h1 className="text-[22px] font-semibold text-gray-700 md:text-3xl">
         Explore our menu
       </h1>
@@ -31,12 +31,15 @@ function Menu() {
         {menuList.map((item) => (
           <div
             key={item.id}
+            onClick={() =>
+              setCategory((prev) => (prev === item.menu ? "All" : item.name))
+            }
             className="flex flex-col items-center cursor-pointer shrink-0 text-grey-500"
           >
             <img
               src={item.image}
               alt={item.name}
-              className="w-20 h-20 md:w-30 md:h-30 rounded-full object-cover"
+              className={`w-20 h-20 md:w-30 md:h-30 rounded-full object-cover ${category === item.name ? " border-4 border-amber-600 p-0.5" : ""}`}
             />
 
             <p className="mt-3">{item.name}</p>
