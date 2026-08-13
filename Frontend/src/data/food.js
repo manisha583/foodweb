@@ -143,6 +143,92 @@ const dishes = [
     category: "sushi",
     desc: "Light and fresh cucumber roll with crisp toppings and subtly seasoned rice.",
   },
+  {
+    id: 17,
+    name: "Pizza Margherita", 
+    rating: "⭐⭐⭐⭐",
+    price: "$16",
+    image: "/foods/margheritapizza.jpg",
+    category: "pizza",
+    desc: "Classic pizza topped with fresh tomatoes, mozzarella, and basil.",
+  },
+  {
+    id: 18,
+    name: "Pepperoni Pizza",
+    rating: "⭐⭐⭐⭐⭐",
+    price: "$18",
+    image: "/foods/pepperonipizza.jpg",
+    category: "pizza",
+    desc: "Crispy crust topped with tangy tomato sauce, mozzarella, and pepperoni slices.",
+  },
+  {
+    id: 19,
+    name: "Sushi Garlic Prawn",
+    rating: "⭐⭐⭐⭐⭐",
+    price: "$22",
+    image: "/foods/sushiprawn.jpg",
+    category: "sushi",
+    desc: "Succulent prawns sautéed in garlic-infused butter with herbs and spices.",
+  },
+  {
+    id: 20,
+    name: "Mixed Ice Cream Bowl",
+    rating: "⭐⭐⭐⭐⭐",
+    price: "$19",
+    image: "/foods/icecreambowl.jpg",
+    category: "dessert",
+    desc: "A delightful mix of various ice cream flavors served in a bowl with toppings.",
+  },
+  {
+    id: 21,
+    name: "Vegetable Stir Fry",
+    rating: "⭐⭐⭐⭐",
+    price: "$12",
+    image: "/foods/vegstirfry.jpg",
+    category: "pureveg",
+    desc: "Mixed vegetables wok-tossed with ginger, garlic, and a light soy-based sauce.",
+  },
+  
+  {
+    id: 22,
+    name: "Tiramisu",
+    rating: "⭐⭐⭐⭐⭐",
+    price: "$12",
+    image: "/foods/tiramisu.jpg",
+    category: "dessert",
+    desc: "Classic Italian dessert with mascarpone, espresso, and cocoa powder layers.",
+  },
+  
+  
+  
+  {
+    id: 23,
+    name: "Falafel Wrap",
+    rating: "⭐⭐⭐⭐",
+    price: "$11",
+    image: "/foods/falafel.jpg",
+    category: "sandwich",
+    desc: "Crispy chickpea fritters wrapped with tahini sauce, lettuce, and tomatoes.",
+  },
+  {
+    id: 24,
+    name: "Vanilla Ice Cream Sundae",
+    rating: "⭐⭐⭐⭐⭐",
+    price: "$9",
+    image: "/foods/icecreamsundae.jpg",
+    category: "dessert",
+    desc: "Creamy vanilla ice cream topped with chocolate sauce, nuts, and whipped cream.",
+  },
+  
+  {
+    id: 25,
+    name: "Panipuri",
+    rating: "⭐⭐⭐⭐",
+    price: "$8",
+    image: "/foods/panipuri.jpg",
+    category: "pureveg",
+    desc: "Crispy hollow sphere filled with potatoes, chickpeas, and tangy water.",
+  },
 ];
 
 export default dishes

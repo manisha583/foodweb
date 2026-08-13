@@ -17,7 +17,7 @@ function Offer() {
 
           <p className="text-gray-600 text-[13px]">On Your First Order</p>
 
-          <button className="bg-orange-600 text-white font-semibold text-[13px] px-2 rounded-2xl py-1 my-2 cursor-pointer flex items-center gap-2">
+          <button className="bg-orange-600 text-white font-semibold text-[13px] px-2 rounded-2xl py-1 my-2 cursor-pointer flex items-center gap-2 hover:bg-orange-500 transform transition duration-300 ease-in-out ">
             Order Now
             <FaArrowCircleRight className="text-[16px]" />
           </button>
@@ -43,7 +43,7 @@ function Offer() {
             Enjoy with your family with our Special combo deals.
           </p>
 
-          <button className="bg-green-700 text-white font-semibold text-[13px] px-2 rounded-2xl py-1 my-2 cursor-pointer flex items-center gap-2">
+          <button className="bg-green-700 text-white font-semibold text-[13px] px-2 rounded-2xl py-1 my-2 cursor-pointer flex items-center gap-2 hover:bg-green-600 transform transition duration-300 ease-in-out">
             Order Now
             <FaArrowCircleRight className="text-[16px]" />
           </button>

@@ -9,12 +9,12 @@ import Offer from "./components/Offer";
 // import Register from "./pages/Register";
 // import Login from "./pages/login";
 import Auth from "./pages/Auth";
+import { CategoryProvider } from "./context/CategoryContext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
-  const [category, setCategory] = useState("All");
   return (
-    <>
+    <CategoryProvider>
       <Routes>
         <Route
           path="/"
@@ -23,7 +23,7 @@ const App = () => {
               <Navbar />
               <Hero />
 
-              <Menu category={category} setCategory={setCategory} />
+              <Menu />
               <FoodCard />
               <Offer />
               <About />
@@ -37,7 +37,7 @@ const App = () => {
         {/* <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} /> */}
       </Routes>
-    </>
+    </CategoryProvider>
   );
 };
 

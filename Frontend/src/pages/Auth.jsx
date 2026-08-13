@@ -190,7 +190,7 @@ const Auth = () => {
 
               <button
                 onClick={() => setIsLogin(true)}
-                className="border-2 border-white text-white font-bold py-2 px-6 rounded-2xl hover:bg-white hover:text-orange-400 transition-all duration-300"
+                className="border-2 border-white text-white font-bold py-2 px-6 rounded-2xl hover:bg-white hover:text-orange-400 transition-all duration-300 cursor-pointer"
               >
                 Login
               </button>
@@ -203,7 +203,7 @@ const Auth = () => {
 
               <button
                 onClick={() => setIsLogin(false)}
-                className="border-2 border-white text-white font-bold py-2 px-6 rounded-2xl hover:bg-white hover:text-orange-400 transition-all duration-300"
+                className="border-2 border-white text-white font-bold py-2 px-6 rounded-2xl hover:bg-white hover:text-orange-400 transition-all duration-300 cursor-pointer"
               >
                 Register
               </button>

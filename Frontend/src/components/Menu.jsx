@@ -6,15 +6,17 @@ import noodles from "../assets/menu/noodles.jpg";
 import pureVeg from "../assets/menu/pureveg.jpg";
 import pasta from "../assets/menu/pasta.jpg";
 import dumpling from "../assets/menu/dumplings.jpg";
+import { useCategory } from "../context/CategoryContext";
 
-function Menu({ category, setCategory }) {
+function Menu() {
+  const { category, setCategory } = useCategory();
   const menuList = [
     { id: 1, name: "Pizza", image: pizza },
     { id: 2, name: "Sushi", image: sushi },
-    { id: 3, name: "Desserts", image: desserts },
+    { id: 3, name: "Dessert", image: desserts },
     { id: 4, name: "Sandwich", image: sandwich },
-    { id: 5, name: "noodles", image: noodles },
-    { id: 6, name: "Pure Veg", image: pureVeg },
+    { id: 5, name: "Noodles", image: noodles },
+    { id: 6, name: "PureVeg", image: pureVeg },
     { id: 7, name: "Pasta", image: pasta },
     { id: 8, name: "Dumpling", image: dumpling },
   ];
@@ -32,7 +34,7 @@ function Menu({ category, setCategory }) {
           <div
             key={item.id}
             onClick={() =>
-              setCategory((prev) => (prev === item.menu ? "All" : item.name))
+              setCategory((prev) => (prev === item.name ? "All" : item.name))
             }
             className="flex flex-col items-center cursor-pointer shrink-0 text-grey-500"
           >

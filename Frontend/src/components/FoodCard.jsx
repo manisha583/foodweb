@@ -1,6 +1,10 @@
 import { useState } from "react";
 import dishes from "../data/food";
+import { useCategory } from "../context/CategoryContext";
+
 function FoodCard() {
+  const { category } = useCategory();
+  console.log("Selected Category:", category);
   const [quantities, setQuantities] = useState({});
 
   const addItem = (id) => {
@@ -22,6 +26,15 @@ function FoodCard() {
     });
   };
 
+  const normalize = (str) => str.toLowerCase().replace(/\s+/g, "");
+
+  const filteredDishes =
+    category === "All"
+      ? dishes
+      : dishes.filter(
+          (dish) => normalize(dish.category) === normalize(category),
+        );
+
   return (
     <section>
       <div className="mt-10 ">
@@ -29,7 +42,7 @@ function FoodCard() {
           Popular Dishes
         </h1>
         <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 px-2 ">
-          {dishes.map((dish) => {
+          {filteredDishes.map((dish) => {
             const qty = quantities[dish.id];
 
             return (
